@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
+<body>
+ <!-- Navigation Bar -->
+ <header>
+	<nav>
+	  <div class="logo">
+		<img src="image/icon.png"  alt="Kishorepur Chatrasangha Club">
+		<h2> Kishorepur Chatrasangha Club</h2>
+	  </div>
+	  <button class="nav-toggle" aria-label="Toggle navigation">
+		<span class="hamburger"></span>
+	  </button>
+	  <ul class="nav-links">
+		<li><a href="#home" class="nav-link active">Home</a></li>
+		<li><a href="#about" class="nav-link">About Us</a></li>
+		<li><a href="#schedule" class="nav-link">Event Schedule</a></li>
+		<li><a href="#gallery" class="nav-link">Gallery</a></li>
+		<li><a href="#donations" class="nav-link">Donations</a></li>
+		<li><a href="#location" class="nav-link">Location</a></li>
+		<li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+		<li><a href="#contact" class="nav-link">Contact Us</a></li>
+	  </ul>
+	</nav>
+  </header>
+  
+
+  
+  <<div  id="home" class="slider">
+	<div class="slides">
+	  <div class="slide">
+		<img src="image/p1.png" alt="Slide 1">
+	  </div>
+	  <div class="slide">
+		<img src="image/p2.png" alt="Slide 2">
+	  </div>
+	  <div class="slide">
+		<img src="image/p3.png" alt="Slide 3">
+	  </div>
+	  <div class="slide">
+		<img src="image/p4.png" alt="Slide 3">
+	  </div>
+	  <div class="slide">
+		<img src="image/p5.png" alt="Slide 3">
+	  </div>
+	</div>
+	<button class="slider-btn explore-btn">Explore</button>
+  </div>
+  
+  
+<div class="countdown-container" id="countdown">
+	<h2>Countdown to The Event</h2>
+  <div class="countdown">
+    <div class="countdown-item">
+      <span class="time" id="days"></span>
+      <span class="label">Days</span>
+    </div>
+    <div class="countdown-item">
+      <span class="time" id="hours"></span>
+      <span class="label">Hours</span>
+    </div>
+    <div class="countdown-item">
+      <span class="time" id="minutes"></span>
+      <span class="label">Minutes</span>
+    </div>
+    <div class="countdown-item">
+      <span class="time" id="seconds"></span>
+      <span class="label">Seconds</span>
+    </div>
+  </div>
+</div>
+  
+<section id="about">
+	<h2>About Us</h2>
+	<p class="fade-in">Kishorepur Chatrasangha proudly organizes Maha Shivaratri, celebrating Lord Shiva with devotion, culture, and joy. Our event features spiritual rituals, cultural performances, and grand stage shows, bringing the community together in faith and festivity. Join us in this divine celebration! Har Har Mahadev!
+		
+		</p>
+  </section>
+
+
+<section id="schedule">
+  <div class="toggle-container">
+    <h2>Event Schedule</h2>
+    <div class="button-container">
+        <button id="day1-toggle" class="toggle-button active">Day 1</button>
+        <button id="day2-toggle" class="toggle-button">Day 2</button>
+    </div>
+</div>
+
+
+<div id="day1-timetable" class="timetable">
+	<div class="slider">
+		<div class="slider-item">
+			<div class="artist-left">
+				<img src="image/a1.jpg" alt="Miss Jojo Mukherjee">
+			</div>
+			<div class="artist-right">
+				<h3>Miss Jojo Mukherjee </h3>
+				<p class="description">Miss Jojo, also known as Jojo Mukherjee, is a singer and actress from Kolkata, West Bengal. Coming from a musical family, she is the daughter of singer-actor Mrinal Mukherjee and singer Shibani Mukherjee.</p>
+				<p><strong>Time:</strong> 10:00 PM</p>
+				<p><strong>Social Media:</strong> 
+					<a href="https://www.youtube.com/c/JojoMukherjee" target="_blank" class="social-link youtube">
+						<i class="fab fa-youtube"></i> YouTube
+					</a>&nbsp;&nbsp;
+					<a href="https://www.instagram.com/jojomusic2/?hl=en" target="_blank" class="social-link instagram">
+						<i class="fab fa-instagram"></i> Instagram
+					</a>&nbsp;&nbsp;
+					<a href="https://www.facebook.com/jojo.mukherjee.98/" target="_blank" class="social-link instagram">
+						<i class="fab fa-facebook"></i> Facebook
+					</a>
+				</p>
+				
+				<audio id="artist1-song" src="audio/as1.mp3" preload="auto"></audio>
+			</div>
+		</div>
+		
+
+		
+		
+	</div>
+</div>
+
+<div id="day2-timetable" class="timetable" style="display: none;">
+	<div class="slider">
+		<div class="slider-item">
+			<div class="artist-left">
+				<img src="image/a2.jpg" alt="Badshah">
+			</div>
+			<div class="artist-right">
+				<h3>Satish Gajmer</h3>
+				<p class="description">Satish Gajmer is an Indian singer, songwriter, and performer associated with Zee Bangla. He studied at the University of Calcutta and currently resides in Siliguri. On Instagram, he describes himself as a singer, songwriter, and performer. His music is available on platforms like Spotify and Apple Music.</p>
+				<p><strong>Time:</strong> 7:00 PM</p>
+				<p><strong>Social Media:</strong> 
+					<a href="https://www.youtube.com/channel/UC2d7augHb8eAayay4yUgrQA" target="_blank" class="social-link youtube">
+						<i class="fab fa-youtube"></i> YouTube
+					</a>&nbsp;&nbsp;
+					<a href="https://www.instagram.com/satish_gajmer/?hl=en" target="_blank" class="social-link instagram">
+						<i class="fab fa-instagram"></i> Instagram
+					</a>&nbsp;&nbsp;
+					<a href="https://www.facebook.com/satish.gajmer.3/" target="_blank" class="social-link instagram">
+						<i class="fab fa-facebook"></i> Facebook
+					</a>
+				</p>
+				
+				<audio id="artist2-song" src="audio/as2.mp3" preload="auto"></audio>
+			</div>
+		</div>
+		
+		<!-- Add more artists for Day 2 here -->
+	</div>
+</div>
+
+</section>  
+
+
+<section id="gallery"> 
+	<h2>Gallary</h2>
+	<div class="scroll-container">
+		<img src="image/g1.jpg" alt="Cinque Terre">
+		<img src="image/g2.jpg" alt="Forest">
+		<img src="image/g3.jpg" alt="Northern Lights">
+		<img src="image/g4.jpg" alt="Mountains">
+		
+ 	 </div>
+</section>
+
+
+  
+  <section class="donation-section" id="donations">
+	<!-- Title Section -->
+	<div class="donation-title">
+	  <h2>Donation</h2>
+	</div>
+
+	<div  id="doner-name">
+		<h3>Our Donors</h3>
+
+	  </div>
+
+
+  
+	<div class="donation-container">
+	  <!-- Left Side: QR Code with "Scan Me" and "Thank You" -->
+	  <div class="qr-code">
+		<h3 class="qr-text">Scan Me</h3>
+		<img src="image/qr.png" alt="QR Code" class="qr-img">
+		<!-- <p class="qr-text">Scan Me</p> -->
+		<p class="thank-you">Thank You</p>
+	  </div>
+  
+	  <!-- Right Side: Donor Names with "Our Donors" title -->
+	 
+
+	   <div  id="doner-namee"  class="doners">
+		<h3>Our Donors</h3>
+
+	  </div> 
+	  <div class="donors-names">
+		<div class="donor-boxes">
+		  <div class="donor-box">
+			<h4>Saikat Khamaru</h4> 
+			<p>Dadpur</p>
+			<p> 500</p>
+		  </div>
+		  <div class="donor-box">
+			<h4>Minati Khamaru</h4> 
+			<p> 500</p>
+		  </div>
+		  <div class="donor-box">
+			<h4>Tanmoy Khamaru</h4> 
+			<p> 500</p>
+		  </div>
+		  <div class="donor-box">
+			<h4>Shaheb Khamaru</h4> 
+			<p> 500</p>
+		  </div>
+		  <div class="donor-box">
+			<h4>Swapan Khamaru</h4> 
+			<p>Dadpur</p>
+			<p> 500</p>
+		  </div>
+		  
+		  <!-- Add more donor names here -->
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+
+  <section id="location">
+	<h2>Event Location</h2>
+	<p>Kishorepur Chatrasangha Football Ground</p>
+	<div class="map-container">
+	  <!-- Button for getting directions -->
+	  <a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=Kishorepur+Chatrasangha+Football+Ground" target="_blank">
+		<button class="directions-btn">Get Directions</button>
+	  </a>
+	  <!-- Embed Google Maps for the location -->
+	  <iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.1194950024874!2d88.21750525686686!3d22.349116435994965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0263b8754bc341%3A0x1c013b08533bb5ad!2sKishorepur%20Chatrasangha%20Football%20Ground!5e0!3m2!1sen!2sin!4v1737624110951!5m2!1sen!2sin"
+		width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+  </section>
+
+
+  <section id="sponsors">
+	<h2>Our Sponsors</h2>
+	<div class="sponsors-slider">
+	  <div class="sponsor-slide">
+		<img src="image/s1.jpeg" alt="Sponsor 1">
+		<img src="image/s2.jpg" alt="Sponsor 2">
+		<img src="image/s3.png" alt="Sponsor 3">
+		<img src="image/s4.png" alt="Sponsor 4">
+		<img src="image/s5.png" alt="Sponsor 5">
+		<img src="image/s6.png" alt="Sponsor 6">
+		<img src="image/s7.jpeg" alt="Sponsor 7">
+		<img src="image/s8.png" alt="Sponsor 8">
+		<img src="image/s9.jpeg" alt="Sponsor 9">
+		<img src="image/s10.jpeg" alt="Sponsor 10">
+		<img src="image/s11.png" alt="Sponsor 11">
+		<img src="image/s12.png" alt="Sponsor 12">
+		<img src="image/s13.png" alt="Sponsor 13">
+		<img src="image/s14.png" alt="Sponsor 14">
+		<img src="image/s15.png" alt="Sponsor 15">
+	  </div>
+	</div>
+  </section>
+  
+  
+  <section id="contact">
+	<h2>Contact Us</h2>
+	<form>
+	  <input type="text" placeholder="Your Name" required>
+	  <input type="email" placeholder="Your Email" required>
+	  <textarea placeholder="Your Message" required></textarea>
+	  <button type="submit">Send Message</button>
+	</form>
+  </section>
+
+  
+  <footer>
+	<p>&copy; Kishorepur Chatrasangha Club. All rights reserved.</p>
+  </footer>
+
+
+  
+
+
+  <!-- Modal Pop-Up -->
+ <!-- Modal Pop-Up -->
+  
+ <canvas id="canvas" class="canvass"></canvas>
+  <div id="popup">
+    <h2>Welcome to Maha Shivaratri</h2>
+    <P>Celebrate the divine night of Lord Shiva with prayers, bhajans, and vibrant festivities. Join us in devotion and joy!
+	</P>
+	<p>	Har Har Mahadev! 🚩🔥
+    </P>
+    <button id="master-control-btn"> Close</button>
+  </div>
+
+  <audio id="audio-player1" src="audio/song1.mp3"></audio>
+
+  <audio id="shootSound" src="audio/sho.mp3" preload="auto"></audio>
+  <audio id="explosionSound" src="explosion.mp3" preload="auto"></audio>
+
+ 
+  <audio id="backgroundSong" src="audio/song2.mp3"></audio>
+
+
+  <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
+
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
