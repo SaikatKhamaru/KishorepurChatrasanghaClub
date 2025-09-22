@@ -509,7 +509,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
  // CountAPI code works online only
-  fetch("https://api.countapi.xyz/hit/myclient-website-event/visits")
+  fetch("https://api.countapi.xyz/hit/https://saikatkhamaru.github.io/KishorepurChatrasanghaClub//visits")
     .then(res => res.json())
     .then(res => {
       document.getElementById("visitor-count").innerText = res.value;
@@ -517,6 +517,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(err => {
       document.getElementById("visitor-count").innerText = "Error loading count";
     });
+
 
 
 
